@@ -5,13 +5,14 @@ public class Main {
         Thread t1 = new Thread(new Runnable() {
             public void run() {
                 Singleton obj1 = Singleton.getInstance();
-                // obj1.print();
+                obj1.print();
             }
         });
 
         Thread t2 = new Thread(new Runnable() {
             public void run() {
                 Singleton obj2 = Singleton.getInstance();
+                obj2.print();
             }
         });
 
